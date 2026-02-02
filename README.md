@@ -152,3 +152,5 @@ Free to use for educational purposes
 
 ---
 **Built with ❤️ using HTML, CSS, and JavaScript**
+
+<!-- commit-log: 2026-02-02T19:23:15 - fix: resolve race condition in message delivery -->
