@@ -158,3 +158,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-03T14:33:53 - chore: update Express and Socket.io to latest stable -->
 
 <!-- commit-log: 2026-02-06T13:35:10 - fix: sanitize user input to prevent XSS -->
+
+<!-- commit-log: 2026-02-11T13:39:07 - fix: correct timestamp formatting in messages -->
