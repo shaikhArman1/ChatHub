@@ -162,3 +162,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-11T13:39:07 - fix: correct timestamp formatting in messages -->
 
 <!-- commit-log: 2026-02-12T10:28:08 - feat: implement group chat functionality -->
+
+<!-- commit-log: 2026-02-15T18:24:08 - feat: implement rate limiting on auth routes -->
