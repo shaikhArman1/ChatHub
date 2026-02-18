@@ -164,3 +164,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-12T10:28:08 - feat: implement group chat functionality -->
 
 <!-- commit-log: 2026-02-15T18:24:08 - feat: implement rate limiting on auth routes -->
+
+<!-- commit-log: 2026-02-18T19:57:07 - refactor: extract database operations to service layer -->
