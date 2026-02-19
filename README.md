@@ -166,3 +166,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-15T18:24:08 - feat: implement rate limiting on auth routes -->
 
 <!-- commit-log: 2026-02-18T19:57:07 - refactor: extract database operations to service layer -->
+
+<!-- commit-log: 2026-02-19T15:27:57 - refactor: move socket handlers to separate module -->
