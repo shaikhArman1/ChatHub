@@ -170,3 +170,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-19T15:27:57 - refactor: move socket handlers to separate module -->
 
 <!-- commit-log: 2026-02-23T11:34:03 - feat: add user presence indicator -->
+
+<!-- commit-log: 2026-02-24T11:29:06 - fix: sanitize user input to prevent XSS -->
