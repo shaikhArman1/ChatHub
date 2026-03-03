@@ -172,3 +172,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-02-23T11:34:03 - feat: add user presence indicator -->
 
 <!-- commit-log: 2026-02-24T11:29:06 - fix: sanitize user input to prevent XSS -->
+
+<!-- commit-log: 2026-03-03T19:01:30 - refactor: move socket handlers to separate module -->
