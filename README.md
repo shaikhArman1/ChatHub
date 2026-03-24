@@ -176,3 +176,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-03-03T19:01:30 - refactor: move socket handlers to separate module -->
 
 <!-- commit-log: 2026-03-11T14:15:49 - feat: add user presence indicator -->
+
+<!-- commit-log: 2026-03-24T10:00:01 - perf: add Redis caching for session data -->
