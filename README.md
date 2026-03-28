@@ -178,3 +178,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-03-11T14:15:49 - feat: add user presence indicator -->
 
 <!-- commit-log: 2026-03-24T10:00:01 - perf: add Redis caching for session data -->
+
+<!-- commit-log: 2026-03-28T17:05:23 - feat: implement rate limiting on auth routes -->
