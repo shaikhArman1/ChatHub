@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatHub - Dynamic Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="authPage" class="auth-page active">
+        <div class="auth-container">
+            <div class="auth-card">
+                <h1>ChatHub</h1>
+                <p class="tagline">Connect with anyone, anywhere</p>
+                
+                <div class="auth-form">
+                    <div class="form-group">
+                        <label for="authUsername">Username</label>
+                        <input type="text" id="authUsername" placeholder="Choose a unique username" maxlength="20">
+                        <span class="username-error" id="usernameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="authEmail">Email</label>
+                        <input type="email" id="authEmail" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="authPassword">Password</label>
+                        <input type="password" id="authPassword" placeholder="Enter your password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="authAvatar">Avatar URL</label>
+                        <input type="text" id="authAvatar" placeholder="Enter avatar image URL" value="https://api.dicebear.com/7.x/avataaars/svg?seed=default">
+                    </div>
+                    
+                    <button id="signupBtn" class="btn btn-primary">Sign Up</button>
+                    <p class="auth-toggle">
+                        Have an account?
+                        <span id="toggleLoginLink">Log In</span>
+                    </p>
+                </div>
+                
+                <div class="demo-users">
+                    <p>Try Demo Accounts:</p>
+                    <button class="demo-btn" onclick="loginDemo('alice')">Alice</button>
+                    <button class="demo-btn" onclick="loginDemo('bob')">Bob</button>
+                    <button class="demo-btn" onclick="loginDemo('charlie')">Charlie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Chat Application -->
+    <div id="appPage" class="app-page">
+        <div class="app-container">
+            <!-- Sidebar - User List -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>ChatHub</h2>
+                    <button id="logoutBtn" class="btn btn-logout" title="Logout">Logout</button>
+                </div>
+                
+                <div class="profile-section">
+                    <img id="currentUserAvatar" src="" alt="Your avatar" class="avatar-small">
+                    <div class="profile-info">
+                        <p id="currentUsername" class="username-small"></p>
+                        <button id="viewMyProfileBtn" class="btn-link">View Profile</button>
+                    </div>
+                </div>
+                
+                <div class="search-section">
+                    <input type="text" id="userSearchInput" placeholder="Search users...">
+                </div>
+                
+                <div class="users-list">
+                    <h3>Users</h3>
+                    <div id="usersList" class="users-container"></div>
+                </div>
+            </aside>
+
+            <!-- Main Chat Area -->
+            <main class="chat-area">
+                <div id="welcomeScreen" class="welcome-screen active">
+                    <div class="welcome-content">
+                        <h2>Welcome to ChatHub!</h2>
+                        <p>Select a user from the list to start chatting</p>
+                    </div>
+                </div>
+
+                <div id="chatScreen" class="chat-screen">
+                    <!-- Chat Header -->
+                    <div class="chat-header">
+                        <div class="chat-header-info">
+                            <img id="chatUserAvatar" src="" alt="Chat user avatar" class="avatar-medium">
+                            <div class="chat-header-text">
+                                <h2 id="chatUsername"></h2>
+                                <p id="chatUserStatus" class="status-online">Online</p>
+                            </div>
+                        </div>
+                        <button id="viewProfileBtn" class="btn btn-secondary">View Profile</button>
+                    </div>
+
+                    <!-- Messages Container -->
+                    <div id="messagesContainer" class="messages-container">
+                        <!-- Messages will be dynamically added here -->
+                    </div>
+
+                    <!-- Message Input -->
+                    <div class="message-input-section">
+                        <input type="text" id="messageInput" placeholder="Type a message..." maxlength="500">
+                        <button id="sendBtn" class="btn btn-primary sendBtn">Send</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content profile-modal">
+            <button class="close-btn" onclick="closeProfileModal()">&times;</button>
+            
+            <div class="profile-view">
+                <div class="profile-header">
+                    <img id="modalUserAvatar" src="" alt="User avatar" class="avatar-large">
+                    <h2 id="modalUsername"></h2>
+                    <p id="modalUserStatus" class="status-badge"></p>
+                </div>
+                
+                <div class="profile-details">
+                    <div class="detail-item">
+                        <label>Email:</label>
+                        <p id="modalUserEmail"></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <label>Bio:</label>
+                        <p id="modalUserBio"></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <label>Member Since:</label>
+                        <p id="modalUserJoinDate"></p>
+                    </div>
+                </div>
+                
+                <div id="editProfileSection" class="edit-profile-section" style="display: none;">
+                    <h3>Edit Profile</h3>
+                    <div class="form-group">
+                        <label for="editBioInput">Bio:</label>
+                        <textarea id="editBioInput" placeholder="Tell us about yourself..." maxlength="200"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editAvatarInput">Avatar URL:</label>
+                        <input type="text" id="editAvatarInput" placeholder="Enter avatar image URL">
+                    </div>
+                    <button id="saveProfileBtn" class="btn btn-primary">Save Changes</button>
+                    <button id="cancelEditBtn" class="btn btn-secondary">Cancel</button>
+                </div>
+                
+                <div id="myProfileActions" style="display: none;" class="profile-actions">
+                    <button id="editProfileBtn" class="btn btn-secondary">Edit Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content confirmation-modal">
+            <h3>Confirm Action</h3>
+            <p id="confirmationMessage"></p>
+            <div class="modal-actions">
+                <button id="confirmBtn" class="btn btn-danger">Confirm</button>
+                <button id="cancelBtn" class="btn btn-secondary" onclick="closeConfirmationModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
