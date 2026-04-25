@@ -190,3 +190,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-04-25T15:13:42 - fix: handle duplicate room creation gracefully -->
 
 <!-- commit-log: 2026-04-25T21:46:00 - fix: resolve race condition in message delivery -->
+
+<!-- commit-log: 2026-04-25T22:57:50 - fix: resolve race condition in message delivery -->
