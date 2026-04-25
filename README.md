@@ -184,3 +184,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-04-25T09:11:10 - feat: add JWT token refresh endpoint -->
 
 <!-- commit-log: 2026-04-25T11:43:21 - feat: implement group chat functionality -->
+
+<!-- commit-log: 2026-04-25T13:27:06 - refactor: extract database operations to service layer -->
