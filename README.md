@@ -202,3 +202,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-05-09T09:58:34 - feat: implement group chat functionality -->
 
 <!-- commit-log: 2026-06-27T12:33:58 - feat: add notification system for new messages -->
+
+<!-- commit-log: 2026-06-27T13:37:33 - refactor: move socket handlers to separate module -->
