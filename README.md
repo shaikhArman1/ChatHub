@@ -204,3 +204,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-06-27T12:33:58 - feat: add notification system for new messages -->
 
 <!-- commit-log: 2026-06-27T13:37:33 - refactor: move socket handlers to separate module -->
+
+<!-- commit-log: 2026-06-27T16:48:56 - fix: resolve memory leak in socket disconnect handler -->
