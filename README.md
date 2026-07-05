@@ -206,3 +206,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-06-27T13:37:33 - refactor: move socket handlers to separate module -->
 
 <!-- commit-log: 2026-06-27T16:48:56 - fix: resolve memory leak in socket disconnect handler -->
+
+<!-- commit-log: 2026-07-05T10:37:15 - fix: correct timestamp formatting in messages -->
