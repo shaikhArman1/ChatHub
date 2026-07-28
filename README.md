@@ -208,3 +208,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-06-27T16:48:56 - fix: resolve memory leak in socket disconnect handler -->
 
 <!-- commit-log: 2026-07-05T10:37:15 - fix: correct timestamp formatting in messages -->
+
+<!-- commit-log: 2026-07-28T16:31:46 - fix: correct timestamp formatting in messages -->
