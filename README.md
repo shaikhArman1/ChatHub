@@ -218,3 +218,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-07-31T12:20:39 - perf: add Redis caching for session data -->
 
 <!-- commit-log: 2026-07-31T13:05:21 - refactor: move socket handlers to separate module -->
+
+<!-- commit-log: 2026-07-31T15:17:03 - fix: resolve race condition in message delivery -->
