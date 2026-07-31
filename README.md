@@ -212,3 +212,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-07-28T16:31:46 - fix: correct timestamp formatting in messages -->
 
 <!-- commit-log: 2026-07-31T10:30:45 - refactor: extract database operations to service layer -->
+
+<!-- commit-log: 2026-07-31T11:50:14 - feat: add user presence indicator -->
