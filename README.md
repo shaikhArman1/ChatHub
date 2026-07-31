@@ -214,3 +214,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-07-31T10:30:45 - refactor: extract database operations to service layer -->
 
 <!-- commit-log: 2026-07-31T11:50:14 - feat: add user presence indicator -->
+
+<!-- commit-log: 2026-07-31T12:20:39 - perf: add Redis caching for session data -->
