@@ -220,3 +220,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-07-31T13:05:21 - refactor: move socket handlers to separate module -->
 
 <!-- commit-log: 2026-07-31T15:17:03 - fix: resolve race condition in message delivery -->
+
+<!-- commit-log: 2026-07-31T17:13:27 - fix: sanitize user input to prevent XSS -->
