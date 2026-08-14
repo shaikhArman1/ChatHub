@@ -226,3 +226,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-08-14T11:37:34 - feat: add message read receipts -->
 
 <!-- commit-log: 2026-08-14T13:21:55 - feat: add JWT token refresh endpoint -->
+
+<!-- commit-log: 2026-08-14T18:40:42 - chore: update Express and Socket.io to latest stable -->
