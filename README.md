@@ -230,3 +230,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-08-14T18:40:42 - chore: update Express and Socket.io to latest stable -->
 
 <!-- commit-log: 2026-08-14T20:05:08 - chore: add .env.example for easier onboarding -->
+
+<!-- commit-log: 2026-08-14T20:26:11 - feat: add JWT token refresh endpoint -->
