@@ -222,3 +222,5 @@ Free to use for educational purposes
 <!-- commit-log: 2026-07-31T15:17:03 - fix: resolve race condition in message delivery -->
 
 <!-- commit-log: 2026-07-31T17:13:27 - fix: sanitize user input to prevent XSS -->
+
+<!-- commit-log: 2026-08-14T11:37:34 - feat: add message read receipts -->
